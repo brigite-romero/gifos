@@ -99,7 +99,7 @@ async function getMyGif() {
 
     allMyGifos.push(myGifoData);
 
-    loader.src = "https://svgur.com/i/WG0.svg";
+    loader.src = "../assets/check.svg";
     textContentVideo.textContent = "GIFO subido con éxito";
 
     const iconsContainer = document.createElement("div");
@@ -115,11 +115,11 @@ async function getMyGif() {
     iconsContainer.append(downloadContainer, linkContainer);
 
     const downloadIcon = document.createElement("img");
-    downloadIcon.src = "https://svgur.com/i/WGB.svg";
+    downloadIcon.src = "../assets/icon-download-v2.svg";
     downloadContainer.appendChild(downloadIcon);
 
     const linkIcon = document.createElement("img");
-    linkIcon.src = "https://svgur.com/i/WEz.svg";
+    linkIcon.src = "../assets/icon-link-hover.svg";
     linkContainer.appendChild(linkIcon);
 
     linkContainer.addEventListener("click", () => {
@@ -171,7 +171,7 @@ const actionBtnStartRecord4 = async () => {
   videoContainer.appendChild(purpleBackground);
   purpleBackground.style = "opacity: 0.6;background: rgb(87, 46, 229);position: absolute;z-index: 99999;width: 428px;top: 0;left: 26px;height: 100%;";
   loader.style = "width: 22px; height: 22px; z-index: 999999; position: absolute; left: calc(50% - 15px); bottom: 50%;";
-  loader.src = "https://svgur.com/i/WFL.svg";
+  loader.src = "../assets/loader.svg";
   textContainerVideo.appendChild(loader);
 
   btnStartRecord.style = "display: none;";
