@@ -1,0 +1,160 @@
+.favoritos{
+    padding: 5px 0 78px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .titulo-fav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .titulo{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            color: $color-morado;
+            text-align: center;
+            line-height: 30px;
+            margin: 7px 0 46px 0;
+        }
+    }
+
+    .noFavoritos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 21px;
+        display: none;
+
+        .text-favoritos{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 17px;
+            color: $color-aguamarina;
+            text-align: center;
+            line-height: 33px;
+            margin: 10px 0 0 0;
+        }
+    }
+
+    .favoritosGuardados{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 21px;
+        justify-content: space-between;
+
+        .gif{
+            background: $color-aguamarina;
+            width: 156px;
+            height: 120px;
+            margin-bottom: 21px;
+        }
+    }
+
+    .ver-mas{
+        background: $color-blanco;
+        border: $color-blanco;
+        transition: .2s ease all;
+        outline: none;
+        padding: 57px 0 0 0;
+
+        .noc{
+            display: none;
+        }
+        .hover{
+            display: none;
+        }
+        &:hover{
+            .hover {
+                display: block;
+            }
+            .pre{
+                display: none;
+            }
+            .noc{
+                display: none;
+            }
+        }
+        
+    }
+}
+.darkmode{
+    .favoritos{
+        .titulo-fav{
+            .titulo{
+                color: $color-blanco;
+            }
+        }
+
+        .noFavoritos{
+            .text-favoritos{
+                color: $color-aguamarina;
+            }
+        }
+
+        .favoritosGuardados{
+            .gif{
+                background: $color-aguamarina;
+            }
+        }
+
+        .ver-mas{
+            background: $color-fondo;
+            border: $color-fondo;
+            .noc{
+                display: block;
+            }
+            .diu{
+                display: none;
+            }
+            .hover{
+                display: none;
+            }
+            &:hover{
+                .hover {
+                    display: block;
+                }
+                .pre{
+                    display: none;
+                }
+                .diu{
+                    display: none;
+                }
+            }
+            
+        }
+    }
+}
+@media (min-width: 1440px){
+    .favoritos{
+        padding: 106px 0 95px 0;
+        
+        .titulo-fav{
+            .titulo{
+                font-size: 25px;
+                margin: 8px 0 36px 0;
+            }
+        }
+    
+        .noFavoritos{
+            max-width: 431px;
+            padding: 74px 0 0 0;
+    
+            .text-favoritos{
+                font-size: 22px;
+                margin: 24px 0 0 0;
+            }
+        }
+        .favoritosGuardados{
+            padding: 0 157px;
+    
+            .gif{
+                width: 260px;
+                height: 200px;
+                margin-bottom: 35px;
+            }
+        }
+    }
+}

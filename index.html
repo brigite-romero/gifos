@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/logo-desktop.svg">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>GIFOS</title>
+</head>
+<body  id="body">
+  
+    <div class="line-purple"></div>
+    <header class="header" id="header">
+        <a href="./index.html" class="logo">
+            <img class="logo-mobile diu" src="./assets/logo-mobile.svg" alt="logo">
+            <img class="logo-desktop diu" src="./assets/logo-desktop.svg" alt="logo">
+            <img class="logo-mobile noc" src="./assets/logo-mobile-modo-noct.svg" alt="logo">
+            <img class="logo-desktop noc" src="./assets/Logo-modo-noc.svg" alt="logo">
+        </a>
+        <div class="search" id="searchHeader">
+            <input type="text" class="inp-search" id="inp-search-header" placeholder="Busca GIFOS y más">
+            <div class="butt-search" id="search-header">
+                <img class="diu" src="./assets/icon-search.svg" alt="search">
+                <img class="noc" src="./assets/icon-search-mod-noc.svg" alt="search">
+            </div>
+        </div>
+        <div class="menu-container">
+            <input type="checkbox" class="menu-check" id="menu-check">
+            <label for="menu-check">
+                <span class="icon-menu">
+                    <img class="diu" src="./assets/burger.svg" alt="menu">
+                    <img class="noc" src="./assets/burger-modo-noct.svg" alt="menu">
+                </span>
+                <span class="closed">
+                    <img class="diu" src="./assets/close.svg" alt="">
+                    <img class="noc" src="./assets/close-modo-noct.svg" alt="">
+                </span>
+            </label>
+           <div class="menu">
+            <a class="con-item diu" href="#" id="darkmode">Modo Nocturno</a>
+            <a class="con-item noc" href="#" id="mododiurno">Modo Diurno</a>
+            <div class="line"></div>
+            <a class="con-item" href="./favoritos.html">Favoritos</a>
+            <div class="line"></div>
+            <a class="con-item" href="./misgifos.html">Mis GIFOS</a>
+                <div class="more"> 
+                  <a href="./creargifos.html"><img class="create diu" src="./assets/button-crear-gifo.svg" alt="create"></a>
+                  <a href="./creargifos.html"><img class="create noc" src="./assets/CTA-crear-gifo-modo-noc.svg" alt="create"></a>
+                  <a href="./creargifos.html"><img  class="create-hover diu" src="./assets/CTA-crear-gifo-hover.svg" alt="create"></a>
+                  <a href="./creargifos.html"><img  class="create-hover noc" src="./assets/CTA-crear-gifo-hover-modo-noc.svg" alt="create"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner" id="banner">
+            <div class="title" id="title">
+                Inspírate, busca, guarda, y crea los mejores <span class="gifos">GIFOS</span>
+            </div>  
+            <div class="img-banner-cont" id="cont-img">
+                <img class="img-banner" src="./assets/ilustra_header.svg" alt="">
+            </div>
+            <div class="div-search">
+                <div class="search">
+                    <div class="img-search-active" id="img-search-active">
+                        <img class="img" src="./assets/icon-search-gray.svg" alt="search">
+                    </div>
+                    <input type="text" class="inp-search" id="inp-search" placeholder="Busca GIFOS y más">
+                    <div class="butt-search" id="search">
+                    <img class="diu" src="./assets/icon-search.svg" alt="search">
+                    <img class="noc" src="./assets/icon-search-mod-noc.svg" alt="search">
+                    </div>
+                    <div class="close-search" id="close-search">
+                        <img class="diu" src="./assets/close.svg" alt="close-search">
+                        <img class="noc" src="./assets/close-modo-noct.svg" alt="close-search">
+                    </div>
+                </div>
+                <div class="line" id="line"></div>
+                <div class="div-sugerencias" id="div-sugerencias">
+                    <div class="sugerencias" id="sugerencias">
+                    </div>
+                </div>
+            </div>
+        <div class="text-banner">
+            <p class="title-trending">Trending:</p>
+            <p class="text-trending">Reactions, Entertainment, Sports, Stickers, Artists</p>
+        </div>
+        <section class="resultados" id="resultados">
+          <div class="titulo-res" id="titulo">
+              <div class="line"></div>
+              <p class="titulo">Lorem Ipsum</p>
+          </div>
+          <div class="noResultados" id="noResultados">
+              <img src="./assets/icon-busqueda-sin-resultado.svg" alt="sin favoritos">
+              <p class="text-resultados">Intenta con otra búsqueda.</p>
+          </div>
+          <div class="cont-result" id="div-resultados">
+              <div class="resultadosObtenidos" id="contResul">
+
+              </div>
+          </div>
+          <button role="button" id="ver-mas" class="ver-mas">
+            <img class="vermas-img pre diu" src="./assets/CTA-ver-mas.svg" alt="ver-mas">
+            <img class="vermas-img hover diu" src="./assets/CTA-ver-mas-hover.svg" alt="ver-mas">
+            <img class="vermas-img pre noc" src="./assets/CTA-ver+-modo-noc.svg" alt="ver-mas">
+            <img class="vermas-img hover noc" src="./assets/CTA-ver+hover-modo-noc.svg" alt="ver-mas">
+          </button>
+        </section>
+    </section>
+
+    <section class="slider">
+      <h2 class="slider__h2">Trending GIFOS</h2>
+      <p class="slider__subtitle">Mira los últimos GIFOS de nuestra comunidad.</p>
+      <div class="slider__container">
+        <div class="slider__arrow">
+          <span class="arrow-left"></span>
+        </div>
+        <div class="slider__arrow">
+          <span class="arrow-right"></span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="share">
+        <div class="text-footer">
+        <div class="compartir">
+            <div class="share-in">Compartir en:</div>
+            <div class="icons">
+            <a href="https://www.facebook.com/" id="facebook" class="facebook link">
+                <i class="fab fa-facebook-f icon"></i>
+            </a>
+            <a href="https://twitter.com/?lang=es" id="twitter" class="twitter link">
+                <i class="fab fa-twitter icon"></i>
+            </a>
+            <a href="https://www.instagram.com/" id="instagram" class="instagram link">
+                <i class="fab fa-instagram icon"></i>
+            </a>
+            </div>
+        </div>
+        <div class="rights">© GIFOS 2020 All Rights Reserved.</div>
+        </div>
+        <div class="line-bottom"></div>
+      </footer>
+    
+    <script src="./script/search.js"></script>
+    <script src="./script/trending.js"></script>
+    <script src="./script/modonocturno.js"></script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.MisGifos {
+  padding-top: 100px;
+  text-align: center;
+}
+.MisGifos .MisGifos__icon {
+  margin-top: 10px;
+  width: 23px;
+  height: 21px;
+}
+.MisGifos .MisGifos__h2 {
+  margin-bottom: 45px;
+  color: #572EE5;
+  font-size: 25px;
+  line-height: 30px;
+}
+body.dark .MisGifos .MisGifos__h2 {
+  color: #FFF;
+}
+.MisGifos .MisGifos__father {
+  width: 82.5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+.MisGifos .MisGifos__father .MisGifos__item {
+  max-width: 156px;
+  width: 45%;
+  height: 120px;
+  margin-bottom: 21px;
+  position: relative;
+  overflow: hidden;
+}
+.MisGifos .MisGifos__father .MisGifos__item .MisGifos__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.MisGifos .MisGifos__father .MisGifos__item .MisGifos__hover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #572ee5;
+  opacity: 0.7;
+  display: none;
+}
+.MisGifos .MisGifos__father .MisGifos__item .MisGifos__icons {
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.MisGifos .MisGifos__father .MisGifos__item .MisGifos__icons .MisGifos__icon-container {
+  width: 32px;
+  height: 32px;
+  margin-right: 5px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  background: white;
+  border-radius: 6px;
+}
+.MisGifos .MisGifos__father .MisGifos__item .MisGifos__icons .MisGifos__icon-container:hover {
+  opacity: 1;
+}
+.MisGifos .MisGifos__father .MisGifos__item .MisGifos__icons .MisGifos__icon-container .MisGifos__icon--first,
+.MisGifos .MisGifos__father .MisGifos__item .MisGifos__icons .MisGifos__icon-container .MisGifos__icon--second,
+.MisGifos .MisGifos__father .MisGifos__item .MisGifos__icons .MisGifos__icon-container .MisGifos__icon--last {
+  width: 18px;
+  height: 15.9px;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.MisGifos .MisGifos__father .MisGifos__item .MisGifos__icons .MisGifos__icon-container .MisGifos__icon--first {
+  background-image: url("../assets/icon-delete.svg");
+}
+.MisGifos .MisGifos__father .MisGifos__item .MisGifos__icons .MisGifos__icon-container .MisGifos__icon--second {
+  background-image: url("../assets/icon-download-v2.svg");
+}
+.MisGifos .MisGifos__father .MisGifos__item .MisGifos__icons .MisGifos__icon-container .MisGifos__icon--last {
+  background-image: url("../assets/icon-max.svg");
+}
+.MisGifos .MisGifos__father .MisGifos__item .MisGifos__text {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 30px;
+}
+.MisGifos .MisGifos__father .MisGifos__item .MisGifos__text .MisGifos__p {
+  margin-left: -44px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+.MisGifos .MisGifos__father .MisGifos__item .MisGifos__text .MisGifos__title {
+  margin-left: 13px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+.MisGifos .MisGifos__father .MisGifos__item:hover .MisGifos__text {
+  display: block;
+}
+.MisGifos .MisGifos__father .MisGifos__item:hover .MisGifos__icon-container {
+  display: flex;
+}
+.MisGifos .MisGifos__father .MisGifos__item:hover .MisGifos__hover {
+  display: block;
+}
+.MisGifos .MisGifos__button {
+  margin: 80px 0;
+  width: 130px;
+  height: 50px;
+  background: none;
+  border: 1px solid #572EE5;
+  border-radius: 25px;
+  color: #572EE5;
+}
+.MisGifos .MisGifos__button a {
+  text-decoration: none;
+}
+.MisGifos .MisGifos__button:hover a {
+  color: #FFF;
+}
+.MisGifos .MisGifos__button:hover {
+  background: #572EE5;
+  color: #FFF;
+}
+body.dark .MisGifos .MisGifos__button {
+  background: transparent;
+  color: #FFF;
+  border: 1px solid #FFF;
+}
+body.dark .MisGifos .MisGifos__button a {
+  text-decoration: none;
+  color: inherit;
+}
+body.dark .MisGifos .MisGifos__button:hover {
+  background-color: #FFF;
+  color: #000;
+}
+
+@media screen and (min-width: 1024px) {
+  .MisGifos .MisGifos__h2 {
+    font-size: 25px;
+  }
+  .MisGifos .MisGifos__father .MisGifos__item {
+    max-width: 260px;
+    height: 200px;
+  }
+  .MisGifos .MisGifos__father .MisGifos__item .MisGifos__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .MisGifos .MisGifos__father .MisGifos__item .MisGifos__hover {
+    width: 100%;
+    height: 100%;
+  }
+  .MisGifos .MisGifos__father .MisGifos__item .MisGifos__hover .MisGifos__hover-icon {
+    margin-top: 10px;
+    height: 32px;
+  }
+  .MisGifos .MisGifos__father .MisGifos__item .MisGifos__hover .MisGifos__hover-icon img {
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .MisGifos .MisGifos__father .MisGifos__item .MisGifos__text {
+    top: 120px;
+    right: 90px;
+  }
+  .MisGifos .MisGifos__father .MisGifos__item .MisGifos__text .MisGifos__p {
+    margin-right: 75px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .MisGifos .MisGifos__father .MisGifos__item .MisGifos__text .MisGifos__title {
+    font-weight: bold;
+    margin-left: -115px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+/*# sourceMappingURL=section-misgifos.css.map */
