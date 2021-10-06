@@ -11,7 +11,7 @@
 </head>
 <body id="body">
     <div class="line-purple"></div>
-    <header class="header">
+    <header class="header" id="header">
       <a href="./index.html" class="logo">
           <img class="logo-mobile diu" src="./assets/logo-mobile.svg" alt="logo">
           <img class="logo-desktop diu" src="./assets/logo-desktop.svg" alt="logo">
@@ -106,28 +106,16 @@
       </button>
     </section>
 
-    <section class="trending">
-      <div class="text">
-        <div class="title">Trending GIFOS</div>
-        <div class="sub">Mira los últimos <br> GIFOS de nuestra comunidad.</div>
-      </div>
-      <div class="gifos-car">
-        <button role="button" id="left-arrow" class="left-arrow arrows">
-            <img class="arrow diu" src="./assets/button-slider-left.svg" alt="button left">
-            <img class="arrow-hover diu" src="./assets/Button-Slider-left-hover.svg" alt="button left">
-            <img class="arrow noc" src="./assets/button-slider-left-md-noct.svg" alt="button left">
-            <img class="arrow-hover noc" src="./assets/button-slider-left-md-noct.svg" alt="button left">
-        </button>
-        <div class="content-car">
-          <div class="carousel">
-          </div>
+    <section class="slider">
+      <h2 class="slider__h2">Trending GIFOS</h2>
+      <p class="slider__subtitle">Mira los últimos GIFOS de nuestra comunidad.</p>
+      <div class="slider__container">
+        <div class="slider__arrow">
+          <span class="arrow-left"></span>
         </div>
-        <button role="button" id="right-arrow" class="right-arrow arrows">
-            <img class="arrow diu" src="./assets/Button-Slider-right.svg" alt="button right">
-            <img class="arrow-hover diu" src="./assets/Button-Slider-right-hover.svg" alt="button right">
-            <img class="arrow noc" src="./assets/button-slider-right-md-noct.svg" alt="button right">
-            <img class="arrow-hover noc" src="./assets/button-slider-right-md-noct.svg" alt="button right">
-          </button>
+        <div class="slider__arrow">
+          <span class="arrow-right"></span>
+        </div>
       </div>
     </section>
 

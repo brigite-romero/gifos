@@ -185,7 +185,6 @@ $light-black: #222326;
   width: 100%;
   position: relative;
 
-  margin-top: 45px;
   padding-top: 46px;
   padding-bottom: 82px;
 
@@ -376,7 +375,6 @@ $light-black: #222326;
   .slider {
     padding-bottom: 182px;
     padding-top: 67px;
-    margin-top: 137px;
 
     .slider__h2 {
       margin-bottom: 12px;
@@ -484,5 +482,18 @@ $light-black: #222326;
   }
   .slider .slider__container .slider__item:hover .slider__text {
     top: 195px;
+  }
+}
+
+.darkmode{
+  .slider {
+    background: $light-black;
+
+    .slider__h2 {
+      color: $white;
+    }
+    .slider__subtitle {
+      color: $white;
+    }
   }
 }

@@ -162,7 +162,6 @@ body.dark #mainDiv #textTitle-- {
 .slider {
   width: 100%;
   position: relative;
-  margin-top: 45px;
   padding-top: 46px;
   padding-bottom: 82px;
   background: #f3f5f8;
@@ -315,7 +314,6 @@ body.dark .slider .slider__subtitle {
   .slider {
     padding-bottom: 182px;
     padding-top: 67px;
-    margin-top: 137px;
   }
   .slider .slider__h2 {
     margin-bottom: 12px;
@@ -410,6 +408,16 @@ body.dark .slider .slider__subtitle {
     top: 195px;
   }
 }
+.darkmode .slider {
+  background: #222326;
+}
+.darkmode .slider .slider__h2 {
+  color: #FFF;
+}
+.darkmode .slider .slider__subtitle {
+  color: #FFF;
+}
+
 .line-purple {
   width: 100%;
   height: 5px;
@@ -675,7 +683,7 @@ body.dark .slider .slider__subtitle {
     align-items: center;
     flex-direction: row;
     background: white;
-    width: 500px;
+    width: 650px;
     height: 54px;
   }
   .header .menu-container .menu .con-item {
@@ -877,10 +885,12 @@ body.dark .slider .slider__subtitle {
 }
 .banner .div-search .sugerencias {
   display: none;
+  height: 150px;
 }
 .banner .div-search .sugerencias .sugerencia {
   display: flex;
   cursor: pointer;
+  padding: 8px 0;
 }
 .banner .div-search .sugerencias .sugerencia .img {
   padding: 0 0 0 23px;
