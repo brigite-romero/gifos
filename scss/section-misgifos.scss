@@ -31,6 +31,7 @@ $light-black: #222326;
   }
   .MisGifos__h2 {
     margin-bottom: 45px;
+    margin-top: 20px;
     color: $purple;
     font-size: 25px;
     line-height: 30px;
@@ -251,6 +252,13 @@ $light-black: #222326;
           }
         }
       }
+    }
+  }
+}
+.darkmode{
+  .MisGifos {
+    .MisGifos__h2 {
+      color: $white;
     }
   }
 }
