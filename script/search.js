@@ -93,6 +93,7 @@ function close(){
     closeSugerencias.style.display = "none";
     lineSugerencias.style.display = "none";
     elementSug.style.display = "none"
+    word.value = ""
 }
 
 closeSugerencias.addEventListener('click', close);
